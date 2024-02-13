@@ -1,2 +1,0 @@
-ALTER TABLE suppliers
-ADD email VARCHAR(100);

@@ -8,8 +8,6 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import java.lang.reflect.GenericDeclaration;
-
 //ENTIDADE JPA
 @Embeddable
 @Getter
@@ -34,5 +32,29 @@ public class Address {
         this.complemento = dados.complemento;
         this.numero = dados.numero;
 
+    }
+
+    public void atualizarEndereco(DataAddress endereco) {
+        if (endereco.logradouro() != null) {
+            this.logradouro = endereco.logradouro();
+        }
+        if (endereco.cep() != null) {
+            this.cep = endereco.cep();
+        }
+        if (endereco.uf() != null) {
+            this.uf = endereco.uf();
+        }
+        if (endereco.bairro() != null) {
+            this.bairro = endereco.bairro();
+        }
+        if (endereco.cidade() != null) {
+            this.cidade = endereco.cidade();
+        }
+        if (endereco.complemento() != null) {
+            this.complemento = endereco.complemento();
+        }
+        if (endereco.numero() != null) {
+            this.numero = endereco.numero();
+        }
     }
 }

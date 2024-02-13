@@ -24,12 +24,33 @@ public class Supplier {
     @Embedded
     private Address endereco;
     private String telefone;
+    private boolean ativo;
 
     public Supplier(DataSuppliersForm dados) {
+        this.ativo = true;
         this.razaoSocial = dados.razaoSocial();
         this.cnpj = dados.cnpj();
         this.endereco = new Address(dados.endereco());
         this.telefone = dados.telefone();
         this.email = dados.email();
+    }
+
+    public void updateInfo(DataSuppliersUpdate supplier) {
+        if (supplier.razaoSocial() != null) {
+            this.razaoSocial = supplier.razaoSocial();
+        }
+        if (supplier.telefone() != null) {
+            this.telefone = supplier.telefone();
+        }
+        if (supplier.email() != null) {
+            this.email = supplier.email();
+        }
+        if (supplier.endereco() != null) {
+            this.endereco.atualizarEndereco(supplier.endereco());
+        }
+    }
+
+    public void deleteActive() {
+        this.ativo = false;
     }
 }

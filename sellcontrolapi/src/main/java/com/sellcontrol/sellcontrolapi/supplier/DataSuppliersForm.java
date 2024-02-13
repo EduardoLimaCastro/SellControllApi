@@ -1,8 +1,10 @@
 package com.sellcontrol.sellcontrolapi.supplier;
 
 import com.sellcontrol.sellcontrolapi.address.Address;
+import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 //DTO
 
@@ -14,7 +16,8 @@ public record DataSuppliersForm(
         String cnpj,
         @Email
         String email,
-        @NotBlank
+        @NotNull
+        @Valid
         Address endereco,
         String telefone) {
 }
