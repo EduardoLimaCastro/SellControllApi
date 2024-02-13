@@ -7,7 +7,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-//ENTIDADE JPA
+//ENTIDADE JPA do Supplier
 
 @Table(name = "suppliers")
 @Entity(name = "Supplier")
