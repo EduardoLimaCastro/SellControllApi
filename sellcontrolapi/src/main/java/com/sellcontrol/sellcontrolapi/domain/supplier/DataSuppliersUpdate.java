@@ -1,7 +1,7 @@
-package com.sellcontrol.sellcontrolapi.supplier;
+package com.sellcontrol.sellcontrolapi.domain.supplier;
 
 
-import com.sellcontrol.sellcontrolapi.address.DataAddress;
+import com.sellcontrol.sellcontrolapi.domain.address.DataAddress;
 import jakarta.validation.constraints.NotNull;
 
 public record DataSuppliersUpdate(

@@ -1,6 +1,6 @@
-package com.sellcontrol.sellcontrolapi.supplier;
+package com.sellcontrol.sellcontrolapi.domain.supplier;
 
-import com.sellcontrol.sellcontrolapi.address.Address;
+import com.sellcontrol.sellcontrolapi.domain.address.Address;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -14,7 +14,7 @@ public record DataSuppliersForm(
         String razaoSocial,
         @NotBlank
         String cnpj,
-        @Email
+        @Email(message = "email não está no formato correto")
         String email,
         @NotNull
         @Valid

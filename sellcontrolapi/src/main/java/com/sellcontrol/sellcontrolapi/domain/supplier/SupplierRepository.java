@@ -1,4 +1,4 @@
-package com.sellcontrol.sellcontrolapi.supplier;
+package com.sellcontrol.sellcontrolapi.domain.supplier;
 
 
 import org.springframework.data.domain.Page;

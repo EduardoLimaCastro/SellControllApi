@@ -1,7 +1,7 @@
 package com.sellcontrol.sellcontrolapi.controller;
 
 
-import com.sellcontrol.sellcontrolapi.supplier.*;
+import com.sellcontrol.sellcontrolapi.domain.supplier.*;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -21,6 +21,13 @@ public class SupplierController {
     public ResponseEntity<Page<DataListSupplier>> read(@PageableDefault(size=10, sort= {"razaoSocial"}) Pageable pagination){
         var page = supplierRepository.findAllByAtivoTrue(pagination).map(DataListSupplier::new);
         return ResponseEntity.ok(page);
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity detailSupplier(@PathVariable Long id) {
+        var supplier = supplierRepository.getReferenceById(id);
+
+        return ResponseEntity.ok(new DataListSupplier(supplier));
     }
 
     @PostMapping

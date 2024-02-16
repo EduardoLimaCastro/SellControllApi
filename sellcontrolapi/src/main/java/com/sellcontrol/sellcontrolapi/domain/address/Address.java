@@ -1,4 +1,4 @@
-package com.sellcontrol.sellcontrolapi.address;
+package com.sellcontrol.sellcontrolapi.domain.address;
 
 import com.sellcontrol.sellcontrolapi.utils.Uf;
 import jakarta.persistence.Embeddable;
