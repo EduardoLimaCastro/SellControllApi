@@ -1,6 +1,8 @@
-package com.sellcontrol.sellcontrolapi.domain.supplier;
+package com.sellcontrol.sellcontrolapi.domain.supplier.model;
 
-import com.sellcontrol.sellcontrolapi.domain.address.Address;
+import com.sellcontrol.sellcontrolapi.domain.address.model.Address;
+import com.sellcontrol.sellcontrolapi.domain.supplier.dto.DataSuppliersForm;
+import com.sellcontrol.sellcontrolapi.domain.supplier.dto.DataSuppliersUpdate;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

@@ -1,4 +1,4 @@
-package com.sellcontrol.sellcontrolapi.domain.address;
+package com.sellcontrol.sellcontrolapi.domain.address.dto;
 
 import com.sellcontrol.sellcontrolapi.utils.Uf;
 import jakarta.validation.constraints.NotBlank;

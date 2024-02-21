@@ -1,6 +1,6 @@
-package com.sellcontrol.sellcontrolapi.domain.supplier;
+package com.sellcontrol.sellcontrolapi.domain.supplier.dto;
 
-import com.sellcontrol.sellcontrolapi.domain.address.Address;
+import com.sellcontrol.sellcontrolapi.domain.address.model.Address;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

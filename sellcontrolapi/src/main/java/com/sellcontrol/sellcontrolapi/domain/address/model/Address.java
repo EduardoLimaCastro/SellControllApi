@@ -1,5 +1,6 @@
-package com.sellcontrol.sellcontrolapi.domain.address;
+package com.sellcontrol.sellcontrolapi.domain.address.model;
 
+import com.sellcontrol.sellcontrolapi.domain.address.dto.DataAddress;
 import com.sellcontrol.sellcontrolapi.utils.Uf;
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.EnumType;

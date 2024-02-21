@@ -1,6 +1,7 @@
-package com.sellcontrol.sellcontrolapi.domain.supplier;
+package com.sellcontrol.sellcontrolapi.domain.supplier.dto;
 
-import com.sellcontrol.sellcontrolapi.domain.address.Address;
+import com.sellcontrol.sellcontrolapi.domain.address.model.Address;
+import com.sellcontrol.sellcontrolapi.domain.supplier.model.Supplier;
 
 public record DataReturnUpdateSupplier(Long id, String razaoSocial, String cnpj , String email, Address endereco, String telefone, boolean ativo) {
 
